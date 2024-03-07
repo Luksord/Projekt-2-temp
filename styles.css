@@ -1,0 +1,145 @@
+d*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.header {
+  background-color: #545454;
+  background-image: url("../images/abstract-background-with-red-lines-mobile.jpg");
+  height: 230px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 216px;
+    background-image: url("../images/abstract-background-with-red-lines-tablet.jpg");
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    background-image: url("../images/abstract-background-with-red-lines-desktop.jpg");
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0%;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    opacity: 100%;
+  }
+}
+
+.menu-link {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.search-message {
+  display: flex;
+  justify-content: center;
+  color: #ff001b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 100%;
+}
+
+.movie-gallery {
+  background-color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 100px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 79px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    height: 77px;
+  }
+}
+
+.footer-paragraph {
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-paragraph {
+    font-size: 19px;
+  }
+}

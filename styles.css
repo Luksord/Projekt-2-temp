@@ -56,18 +56,21 @@ ol {
   }
 }
 
-.menu-wrap {
+.nav-wrap {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
+  display: block;
+  justify-content: flex-start;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 30px;
-  text-align: center;
+  text-decoration: none;
   opacity: 0%;
 }
 @media screen and (min-width: 768px) {
@@ -76,7 +79,15 @@ ol {
   }
 }
 
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
 .menu-link {
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -86,22 +97,42 @@ ol {
   text-decoration: none;
 }
 
-.form-input {
+.search-tab {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .search-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 280px;
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid white;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .search-input {
+    width: 395px;
+  }
+}
+
+.search-input::placeholder {
+  color: white;
 }
 
 .search-message {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #ff001b;
   font-family: "Roboto", sans-serif;
   font-weight: 400;

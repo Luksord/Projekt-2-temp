@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu-wrap">
+      <nav class="nav-wrap">
         <a href="./index.html" class="logo">Filmoteka</a>
         <ul class="menu">
           <li class="menu-item">
@@ -19,20 +19,30 @@
           </li>
         </ul>
       </nav>
-      <form>
-      <input class="search-input" />
+      <div class="search-tab">
+        <form class="search-form" id="search-form">
+          <input
+            class="search-input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Movie search"
+            data-search
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
       <p class="search-message">
         Search result not successful. Enter the correct movie name and
       </p>
-    </form>
     </header>
     <main class="movie-gallery">
       <div class="movie-card"></div>
     </main>
     <footer class="footer">
       <p class="footer-paragraph">
-        © 2020 | All Rights Reserved | Developed with by <span style="text-decoration: underline;">GoIT Students</span>
-      </p>
+        © 2020 | All Rights Reserved | Developed with by
+        <span style="text-decoration: underline">GoIT Students</span>
       </p>
     </footer>
   </body>
